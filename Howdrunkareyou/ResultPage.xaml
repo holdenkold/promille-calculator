@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Howdrunkareyou.ResultPage">
+    <ContentPage.Content>
+        <StackLayout Margin="0, 50, 0, 50" VerticalOptions="Center">
+            <Label Text="You have" FontSize="Large" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="0, 0, 0, 10"/>
+            <Label x:Name="ResultLabel" Text="." FontSize="Medium" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="0, 0, 0, 60"/>
+            <Label x:Name="DesidionLabel" Text="." FontSize="Medium" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

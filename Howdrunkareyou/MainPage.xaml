@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Howdrunkareyou" x:Class="Howdrunkareyou.MainPage">
+    <StackLayout Margin="30, 50, 30, 50" VerticalOptions="Center">
+        <Label Text="Choose Alcohol" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Start" Margin="0, 0, 0, 20" />
+        <Grid VerticalOptions="CenterAndExpand" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2.5*" />
+                <RowDefinition Height="*"  />
+                <RowDefinition Height="2.7*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ImageButton x:Name="beerButton" Grid.Row="0" Source="beer_img.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="beerEntry" Grid.Row="1" WidthRequest="60" Placeholder="0" Margin="40, 10, 40, 0"  HorizontalOptions="CenterAndExpand"/>
+            <ImageButton x:Name="wineButton" Grid.Row="2" Source="wine-glass_img.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="wineEntry" Grid.Row="3" WidthRequest="60" Placeholder="0" Margin="40, 10, 40, 0" HorizontalOptions="CenterAndExpand" />
+            <ImageButton x:Name="liqeuerButton" Grid.Row="4" Source="liqeuer_img.png" HeightRequest="90" WidthRequest="90" HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="shotsEntry" Grid.Row="5" WidthRequest="60" Placeholder="0" Margin="40, 10, 40, 0" HorizontalOptions="CenterAndExpand" />
+        </Grid>
+        <Button x:Name="CalculateButton" Text="Calculate" FontSize="Large" HorizontalOptions="Center" VerticalOptions="End"  Margin="0, 20, 0, 0" />
+    </StackLayout>
+</ContentPage>
